@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TMDB Movies</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+  </head>
+  <body>
+    <h1>TMDB Movies</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Overview</th>
+          <th>Release Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% movies.forEach((movie) => { %>
+        <tr>
+          <td><%= movie.title %></td>
+          <td><%= movie.overview %></td>
+          <td><%= movie.release_date %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>
